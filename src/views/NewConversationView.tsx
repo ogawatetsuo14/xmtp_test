@@ -66,9 +66,9 @@ export default function NewConversationView(): ReactElement {
     <div className="p-4 pt-14">
       <Header>
         <div className="flex justify-between">
-          <h1>Make a new conversation</h1>
+          <h1>新規の会話</h1>
           <Link className="text-blue-600" to="/">
-            Go Back
+            戻る
           </Link>
         </div>
       </Header>
@@ -82,7 +82,7 @@ export default function NewConversationView(): ReactElement {
 
           <label className="block">
             <span className="block text-xs my-2">
-              Who {addresses.length > 0 && "else "}do you want to message with?
+              誰に{addresses.length > 0 && "else "}メッセージを送りますか？
             </span>
 
             <input
@@ -90,11 +90,11 @@ export default function NewConversationView(): ReactElement {
               ref={addressInputRef}
               type="text"
               className="border p-2 w-full md:w-1/2 rounded shadow-sm dark:bg-black"
-              placeholder="Enter an address"
+              placeholder="ここに送信先のウォレットアドレスを入力してください。"
             ></input>
           </label>
           <label className="block space-x-4">
-            <Button type="submit">Start Conversation</Button>
+            <Button type="submit">会話を始める</Button>
           </label>
         </form>
       </div>

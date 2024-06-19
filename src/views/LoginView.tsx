@@ -34,16 +34,9 @@ export default function LoginView(): ReactElement {
             Login
           </h3>
           <div className="mt-2 max-w-xl text-sm text-gray-500">
-            <p>You can generate a wallet or connect your own.</p>
+            <p>ご利用されているウォレットに接続してください。</p>
           </div>
           <div className="mt-5 flex space-x-4">
-            <Button
-              type="button"
-              onClick={generateWallet}
-              className="rounded-lg"
-            >
-              Generate Wallet
-            </Button>
             <div className="connect-button">
               <ConnectButton />
             </div>
